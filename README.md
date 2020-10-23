@@ -9,7 +9,7 @@ The PDFs are a good starting point for someone who has never worked with Qualtri
 Some points to note:
 
 - I'm not well versed with JS *(read as lookup function at stackoverflow)* and therefore some of the code may be inelegant and inefficient. Please let me know if you know how a better solution.
-- All code uploaded is working on the day it was uploaded. If it doesn't work for you, please let me and we'll check if its an issue in your implementation or an update from Qualtrics. 
+- All code uploaded is working on the day it was uploaded. If it doesn't work for you, please let me know, and we'll check if it's an issue in your implementation or an update from Qualtrics. 
 
 
 [^1]:Please let me know if there are copyright issues. I'll take them down and replace them with a link to them. Also, at present I haven't credited anyone, will do that as things go along.  
