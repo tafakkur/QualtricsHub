@@ -1,6 +1,6 @@
 # List of Demos
 
-1. Simulated Error:
+## Simulated Error:
    1. The page had three questions:
       1. Text: Shows text asking the respondents to wait for the website to load.
       1. Text: HTML iframe to create a box within which to show the website.
