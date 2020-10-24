@@ -16,5 +16,5 @@
 
 
 <p align="center">
-  <img src="Simulated-Error.gif">
+  <img src="external-website-error.gif">
 </p>
