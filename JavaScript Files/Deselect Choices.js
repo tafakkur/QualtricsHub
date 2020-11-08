@@ -5,7 +5,19 @@
 
 
 // Add this to your Question Text
-<button id="Deselect1">Deselect All</button>
+<style> 
+    #Deselect1 { 
+        background-image: url("/Images/deselect_line.png");/* Add link to your image here */ 
+        background-size: cover; 
+        width: 254px; 
+        height: 22px;
+        border: none;} 
+</style> 
+
+<div>
+    <b>Please ignore this question and do not select any answer here. This is to identify random clicking.</b><button id="Deselect1"></button>
+</div>
+
 
 // Question JS
 
