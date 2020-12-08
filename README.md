@@ -12,4 +12,7 @@ Some points to note:
 - All code uploaded is working on the day it was uploaded. If it doesn't work for you, please let me know, and we'll check if it's an issue in your implementation or an update from Qualtrics. 
 
 
+[Examples](/examples/)  
+[JavaScript Functions](/JavaScript%20Files/)
+
 <b id="f1">1:</b> Please let me know if there are copyright issues. I'll take them down and replace them with a link to them. Also, at present I haven't credited anyone, will do that as things go along. [↩](#a1)
