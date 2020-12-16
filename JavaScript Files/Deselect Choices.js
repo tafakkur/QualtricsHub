@@ -19,20 +19,20 @@
 </style> 
 
 <div>
-    <b>Please ignore this question and do not select any answer here. This is to identify random clicking.</b><button id="Deselect1"></button>
+    <b>Click on the button to deselect your choices.</b><button id="Deselect1"></button>
 </div>
 
 
 // Question JS
 
 Qualtrics.SurveyEngine.addOnload(function () {
-	var questionId = this.questionId; //Get the Question Id
+	var qid = this.questionId; //Get the Question Id
 	// Get the choices. This is needed as sometimes Qualtrics just goes crazy with choice numbers
-	nChoices = Qualtrics.SurveyEngine.registry[questionId].getChoices();
+	all_choices = Qualtrics.SurveyEngine.registry[qid].getChoices();
 
 	jQuery("#Deselect1").click(function () {
-		nChoices.forEach((item) => {
-			Qualtrics.SurveyEngine.registry[questionId].setChoiceValue(item,false);
+		all_choices.forEach((item) => {
+			Qualtrics.SurveyEngine.registry[qid].setChoiceValue(item,false);
 			});
 	});
 });
