@@ -1,7 +1,10 @@
 // This is JS to allow participants to deselect their choices on the single answer type questions
 // Courtesy mattyb513 Ref: https://www.qualtrics.com/community/discussion/1387/deselecting-a-radio-button
 
+
+
 // You'll need to first create a Deselect Button. 
+// If you have multiple such buttons on the same page, you'll need to change their ids
 
 
 // This for a single question. For Matrix type, find below
