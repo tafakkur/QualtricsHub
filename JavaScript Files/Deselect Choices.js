@@ -13,7 +13,7 @@
 
 // Question JS
 
-Qualtrics.SurveyEngine.addOnload(function () {
+Qualtrics.SurveyEngine.addOnReady(function () {
 	var qid_mchoice = this.questionId; //Get the Question Id
 	// Get the choices. This is needed as sometimes Qualtrics just goes crazy with choice numbers
 	all_choices = Qualtrics.SurveyEngine.registry[qid_mchoice].getChoices();
@@ -30,7 +30,7 @@ Qualtrics.SurveyEngine.addOnload(function () {
 
 // For Matrices
 
-Qualtrics.SurveyEngine.addOnload(function(){
+Qualtrics.SurveyEngine.addOnReady(function(){
     qid_matrix = this.questionId;
     scale_points = Object.keys(Qualtrics.SurveyEngine.QuestionInfo[qid].Answers).length;
 
