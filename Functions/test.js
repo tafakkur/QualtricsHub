@@ -1,28 +1,3 @@
-/**
- * åŸºäºŽjqueryçš„æ‚¬æµ®æç¤ºæ’ä»¶
- *
- * @author AfterWin
- * @mail CJ_Zheng1023@hotmail.com
- *
- *  example:jQuery(selector).jqTip({
- *      title:"",            æ ‡é¢˜
- *      content:"",          å†…å®¹
- *      width:"",            å†…å®¹åŒºåŸŸå®½åº¦
- *      height:""            å†…å®¹åŒºåŸŸé«˜åº¦
- *  })
- *
- *
- *  update log
- *
- *
- *  v1.0.0         åŸºæœ¬åŠŸèƒ½å®Œæˆ
- *
- *
- *
- */
-
-
-
 (function(jQuery){
 
     var settings={
