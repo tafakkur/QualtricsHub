@@ -32,7 +32,7 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 
 Qualtrics.SurveyEngine.addOnReady(function(){
     qid_matrix = this.questionId;
-    scale_points = Object.keys(Qualtrics.SurveyEngine.QuestionInfo[qid].Answers).length;
+    scale_points = Object.keys(Qualtrics.SurveyEngine.QuestionInfo[qid_matrix].Answers).length;
 
     // Get the location of the Deselect Button
     choices = Qualtrics.SurveyEngine.QuestionInfo[qid_matrix].Choices;
