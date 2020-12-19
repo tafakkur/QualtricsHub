@@ -1,7 +1,11 @@
 # Add Social Media Link in the Survey
 
-This code allows you to add a hyperlink to an image in a Qualtrics survey.
-My primary use case has been to create sharing buttons for social media platforms at the end of the survey.
+This code allows you to add a social media hyperlink to an image in a Qualtrics survey.
+My primary use case has been to create sharing buttons for social media platforms at the end of the survey. 
+Since Qualtrics blocks social media sites, some workaround is required. 
+
+The codes below contain links to the social media icons at this GitHub account. The best option for you is to upload your custom social media icons into Qualtrics and then use them. This will allow them to load faster and ensure they are always shown.  
+   
 <br><br>
 [*Link to Working Demo*](https://iima.au1.qualtrics.com/jfe/form/SV_aaWPtD2N7WEQIXr) 
 <small><br>Hold down <kbd>Ctrl</kbd> or <kbd>⌘ Cmd</kbd> to open the link in a new tab</small>
