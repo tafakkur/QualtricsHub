@@ -4,6 +4,7 @@ This function allow one to add the matrix header row at a custom location in the
 The script below is for adding the header as the 2th row, but multiple rows can be added with slight modification.
 <br><br>
 [*Link to Working Demo*](https://iima.au1.qualtrics.com/jfe/preview/SV_2rCRZYIQqNq0nzv/BL_9Hnthujr7TA2LvD?Q_SurveyVersionID=current) 
+<small><br>Hold down <kbd>Ctrl</kbd> or <kbd>⌘ Cmd</kbd> to open the link in a new tab</small>
 <br><br>
 *Screenshot*:
 

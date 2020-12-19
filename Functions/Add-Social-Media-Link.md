@@ -4,6 +4,7 @@ This code allows you to add a hyperlink to an image in a Qualtrics survey.
 My primary use case has been to create sharing buttons for social media platforms at the end of the survey.
 <br><br>
 [*Link to Working Demo*](https://iima.au1.qualtrics.com/jfe/form/SV_aaWPtD2N7WEQIXr) 
+<small><br>Hold down <kbd>Ctrl</kbd> or <kbd>⌘ Cmd</kbd> to open the link in a new tab</small>
 <br><br>
 *Screenshot*:
 

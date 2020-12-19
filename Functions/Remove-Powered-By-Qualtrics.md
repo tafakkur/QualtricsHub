@@ -6,6 +6,7 @@ There are two ways to use the function. If you place it within the header (`Look
 
 <br><br>
 [*Link to Working Demo*](https://iima.au1.qualtrics.com/jfe/preview/SV_2rCRZYIQqNq0nzv/BL_50ayDWeUd6ErdeR?Q_SurveyVersionID=current) 
+<small><br>Hold down <kbd>Ctrl</kbd> or <kbd>⌘ Cmd</kbd> to open the link in a new tab</small>
 <br><br>
 
 *Screenshot*:
