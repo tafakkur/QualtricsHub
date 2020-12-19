@@ -7,8 +7,9 @@ The script below is for adding the header as the 2th row, but multiple rows can 
 <br><br>
 *Screenshot*:
 
-<img src="../screenshots/matrix_add_header_row.png" title="matrix-with-header-row-at-custom-location" alt="matrix-with-header-row-at-custom-location" style="width:50%;display: block; border: 2px solid"/>
-
+<kbd>
+<img src="../screenshots/matrix_add_header_row.png" title="matrix-with-header-row-at-custom-location" alt="matrix-with-header-row-at-custom-location" style="width:50%; border: 2px solid"/>
+</kbd>
 <br><br>
 
 *Question Javascript:*

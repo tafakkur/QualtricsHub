@@ -7,8 +7,9 @@ My primary use case has been to create sharing buttons for social media platform
 <br><br>
 *Screenshot*:
 
-<img src="../screenshots/share-on-social-media.png" title="Share Survey on Social Media" alt="Share Survey on Social Media" style="width:50%;display: block; border: 2px solid"/>
-
+<kbd>     
+    <img src="../screenshots/share-on-social-media.png" title="Share Survey on Social Media" alt="Share Survey on Social Media" style="width:50%; border: 2px solid"/> 
+</kbd>
 <br><br>
 
 *Question Text*:<br>

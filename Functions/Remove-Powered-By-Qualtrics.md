@@ -9,7 +9,9 @@ There are two ways to use the function. If you place it within the header (`Look
 <br><br>
 
 *Screenshot*:
-<img src="../screenshots/removed_powered_by_qualtrics.png" title="removed_powered_by_qualtrics" alt="removed_powered_by_qualtrics" style="width:50%;display: block; border: 2px solid"/>
+<kbd>
+ <img src="../screenshots/removed_powered_by_qualtrics.png" title="removed_powered_by_qualtrics" alt="removed_powered_by_qualtrics" style="width:50%; border: 2px solid"/>
+ </kbd>
 
 <br><br>
 

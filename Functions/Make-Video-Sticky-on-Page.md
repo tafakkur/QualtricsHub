@@ -6,8 +6,9 @@ The demo function below is for adding a YouTube video using an iframe, but `inne
 <br><br>
 *Screenshot*:
 
-<img src="../screenshots/sticky_video.png" title="matrix-with-header-row-at-custom-location" alt="matrix-with-header-row-at-custom-location" style="width:50%;display: block; border: 2px solid"/>
-
+<kbd>
+<img src="../screenshots/sticky_video.png" title="matrix-with-header-row-at-custom-location" alt="matrix-with-header-row-at-custom-location" style="width:50%;  border: 2px solid"/>
+</kbd>
 <br><br>
 
 *Question Javascript:*
