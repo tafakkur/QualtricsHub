@@ -1,0 +1,147 @@
+.Skin .QuestionOuter.Matrix{ max-width: 100%; }
+
+/*This CSS has been tested with the built-in templates "Boxed Questions" and "Minimal 2014". It will NOT work with the newer responsive templates that use wide bars instead of checkboxes, and it will not work with the older non-responsive templates. (Some colors may be affected, but those templates use other selectors for the elements that would still need to be customized.)*/
+
+/*Change next and previous button colors ("static" and on mouseover/focus*/
+.Skin #Buttons #NextButton,
+.Skin #Buttons #PreviousButton {
+	background-color: #002554;
+}
+.Skin #Buttons #NextButton:hover,
+.Skin #Buttons #NextButton:focus,
+.Skin #Buttons #PreviousButton:hover,
+.Skin #Buttons #PreviousButton:focus {
+	background: #ac4e18;
+}
+
+/*Add extra padding on top and sides of survey (looks better if embedding the survey in another page using iframes)*/
+/* .Skin .SkinInner {
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 30px;
+} */
+
+/*(Optional) Set fonts for survey body and buttons to use a Google Font (Source Sans Pro, sans-serif fallback)*/
+body,
+.Skin,
+.Skin #Buttons #NextButton,
+.Skin #Buttons #PreviousButton,
+.Skin #Buttons #NextButton:hover,
+.Skin #Buttons #NextButton:focus,
+.Skin #Buttons #PreviousButton:hover,
+.Skin #Buttons #PreviousButton:focus {
+	font-family: "Source Sans Pro", sans-serif !important;
+}
+
+/*Change colors for most survey items including multiple choice and matrix table (radio buttons and checkboxes); surround colors for clicked-on dropdowns; sliders (bar and slider types, but not the star type); text entry box border color (when cursor is inside the box); and number labels for drag-and-drop ranking items*/
+.Skin label.q-radio.q-checked {
+	/* background-color: #20445e; */
+}
+.Skin label.q-checkbox,
+.Skin label.q-radio {
+	border: 2px solid #20445e;
+}
+/* .Skin label.q-checkbox.q-focused,.Skin label.q-radio.q-focused{outline:#000 dotted thin} */
+.Skin label.q-radio.q-checked {
+	background-color: #20445e;
+}
+.Skin label.q-radio.q-checked.q-focused {
+	background-color: #20445e;
+	box-shadow: none;
+}
+.Skin label.q-checkbox.q-checked {
+	background-color: #20445e;
+}
+.Skin label.q-checkbox.q-checked.q-focused {
+	background-color: #20445e;
+}
+.Skin .TE textarea:focus,
+.Skin input.TextEntryBox:focus,
+.Skin input[type="text"]:focus,
+.Skin input[type="password"]:focus,
+.Skin input[type="search"]:focus,
+.Skin select:focus,
+.Skin textarea:focus {
+	border-color: #20445e;
+}
+.Skin .PGR .DragAndDrop .rank,
+.Skin .RO .DND .rank {
+	background-color: #20445e;
+	color: #fff;
+}
+.Skin .RO .DND .rank,
+.Skin .RO .DND ul.Edited .rank,
+.Skin .RO .DND ul.NotEdited li:hover .rank {
+	background: #20445e;
+	color: #fff;
+}
+.Skin .HBAR .trackHolderRel .track:hover,
+.Skin .HBAR .trackHolderRel.activated .track {
+	border-color: #20445e;
+}
+.Skin .SB input,
+.Skin .SS .horizontalbar .handle,
+.Skin .SS .verticalbar .SSTrack .handle,
+.Skin .horizontalbar .BarContainer:hover .bar,
+.Skin .horizontalbar .Slider .handle,
+.Skin .horizontalbar .activated .bar {
+	background: #20445e;
+}
+.Skin .SS .horizontalbar .handle:hover,
+.Skin .horizontalbar .Slider .handle:hover {
+	background-color: #20445e;
+}
+
+/*Change color fills for progress bar (ProgressBarFill is the "filled-in" color; ProgressBarFillContainer is the "unfilled" background color)*/
+.Skin .ProgressBarFill {
+	background-color: #0c3452;
+}
+.Skin #ProgressBarFillContainer,
+.Skin .ProgressBarFillContainer {
+	background: #cccccc;
+}
+
+.Skin label.MultipleAnswer,
+.Skin label.SingleAnswer {
+	cursor: pointer;
+	/* background: #f1f1f1; */
+	/* background: #00000003; */
+	/* border: 1px solid #0000001a; */
+	transition: background 0.2s ease-in-out;
+	/* padding: 20px; */
+	display: block;
+	text-align: center;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.Skin label.MultipleAnswer.q-checked.q-focused:hover,
+.Skin label.MultipleAnswer.q-checked:hover,
+.Skin label.SingleAnswer.q-checked.q-focused:hover,
+.Skin label.SingleAnswer.q-checked:hover {
+	/* background: #00000014; */
+	/* border-color: #1251c1; */
+	/* border: 3px solid #1251c1; */
+    color: #001797;
+    font-weight: bold;
+}
+.Skin label.MultipleAnswer.q-checked,
+.Skin label.SingleAnswer.q-checked {
+	/* background: #00000014;  */
+	/* border-color: #00395a; */
+	/* border-color: #1251c1; */
+	/* border: 3px solid #1251c1; */
+	color: #001797;
+    font-weight: bold;
+}
+
+@media (min-width: 770px){
+.Skin .SkinInner {
+	background-color: #0c3452;
+    width: 900px;
+    max-width: 95%;
+}
+}
