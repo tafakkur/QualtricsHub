@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Qualtrics Related Stuff from Across the Web](README.md)
+* [File Download Links](links-to-files.md)
 * [Functions](functions/README.md)
   * [Clear-Text-Entry-Box](functions/clear-text-entry-box.md)
   * [Add Social Media Link in the Survey](functions/add-social-media-link.md)
@@ -23,6 +24,5 @@
   * [Highlight-Selected-Choices](functions/highlight-selected-choices.md)
   * [Change-Question-Text](functions/change-question-text.md)
   * [Highlight-unanswered-questions-Request-Response](functions/highlight-unanswered-questions-request-response.md)
-* [File Download Links](links-to-files.md)
 * [Some Gif Demos](examples.md)
 
