@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Qualtrics Related Stuff from Across the Web](README.md)
-* [Qualtrics Related Stuff from Across the Web](docs.md)
 * [Functions](functions/README.md)
   * [Clear-Text-Entry-Box](functions/clear-text-entry-box.md)
   * [Add Social Media Link in the Survey](functions/add-social-media-link.md)
