@@ -5,7 +5,7 @@
 /*Change next and previous button colors ("static" and on mouseover/focus*/
 .Skin #Buttons #NextButton,
 .Skin #Buttons #PreviousButton {
-	background-color: #002554;
+	background-color: #271c88;
 }
 .Skin #Buttons #NextButton:hover,
 .Skin #Buttons #NextButton:focus,
@@ -140,7 +140,7 @@ body,
 
 @media (min-width: 770px){
 .Skin .SkinInner {
-	background-color: #0c3452;
+	background-color: #71b6eb;
     width: 900px;
     max-width: 95%;
 }

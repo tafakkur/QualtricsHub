@@ -15,7 +15,7 @@ Qualtrics.SurveyEngine.addOnload(function () {
 	});
 
 	document.addEventListener("fullscreenchange", function () {
-		if (document.fullscreenElement !== null) {
+		if (document.fullscreenElement != null) {
 			full_screen = setInterval(() => {
 				time_fs++;
 			}, 100);
