@@ -17,8 +17,14 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 			tot = [];
 			for (j = 0; j < 2; j++) {
 				m = i * 2 + j;
-				t = input_boxes[m].value.split(":");
-				timing = Number(t[0]) * 60 + Number(t[1]);
+				t = input_boxes[m].value;
+				if(t.includes(":")){
+					t = t.split(":");
+					timing = Number(t[0]) * 60 + Number(t[1]);
+				} else{
+					timing = Number(t) * 60;
+				}
+				
 				tot.push(timing);
 			}
 			open_for.push(tot[1] - tot[0]);
@@ -31,7 +37,6 @@ Qualtrics.SurveyEngine.addOnReady(function () {
         if(open_mins){
             open_text += " and " + open_mins + " minutes";
         }
-        
         Qualtrics.SurveyEngine.setEmbeddedData("hours_open", open_text);
     }
 });
