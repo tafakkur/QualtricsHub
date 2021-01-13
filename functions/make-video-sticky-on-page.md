@@ -1,11 +1,11 @@
 # Sticky Video
 
-This function allows you to make a video/image/text sticky on the page, so that it displays at all times, even when the participants scroll down. The demo function below is for adding a YouTube video using an iframe, but `innerHTML` can be modified to anything.
-
-[_Link to Working Demo_](https://iima.au1.qualtrics.com/jfe/preview/SV_2rCRZYIQqNq0nzv/BL_ba2DyuPGT8DLF6B?Q_SurveyVersionID=current)  
-Hold down Ctrl or ⌘ Cmd to open the link in a new tab
-
-_Screenshot_:
+This function allows you to make a video/image/text sticky on the page, so that it displays at all times, even when the participants scroll down. The demo function below is for adding a YouTube video using an iframe, but `innerHTML` can be modified to anything.   
+  
+ [_Link to Working Demo_](https://iima.au1.qualtrics.com/jfe/preview/SV_2rCRZYIQqNq0nzv/BL_ba2DyuPGT8DLF6B?Q_SurveyVersionID=current)   
+Hold down Ctrl or ⌘ Cmd to open the link in a new tab   
+  
+ _Screenshot_:
 
 ![](../.gitbook/assets/sticky_video.png)
 
