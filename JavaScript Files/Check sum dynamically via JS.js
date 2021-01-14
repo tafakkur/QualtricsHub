@@ -14,13 +14,12 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 
 	// Detect a change in any of the choices
 	n_choices.forEach((item) => {
-		console.log("input detected");
 		document.querySelector("#QR\\~" + qid + "\\~" + item).oninput = function () {chk_sum();};
 	});
 
 	that = this;
 	function chk_sum() {
-		var max_sum = parseInt("${e://Field/max_sum}");
+		var max_sum = 25;
 		var current_sum = 0;
 		
         padding_pre =  '<br> <a style="color:red;">';
