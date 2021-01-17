@@ -23,6 +23,7 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 	wrong_times = 0;
 	show_attempt = 1;
 	this.hideNextButton();
+	this.hidePreviousButton();
 
 	el = this.getChoiceContainer().querySelectorAll("input");
 	this.getChoiceContainer().insertAdjacentHTML(
