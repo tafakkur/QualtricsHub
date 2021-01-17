@@ -43,7 +43,11 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 	function check_answer() {
 		given_answer = 0;
 		for(i=0;i<el.length;i++){
-			//You can change this to calculate the given answer, as you with to calculate it.
+            if(!Number(el[i].value)) {
+                alert("One of your cells is either empty or contains an invalid input. Please correct it and enter only numbers.");
+                return false
+            }
+			//You can change this to calculate the given answer, as you wish to calculate it.
 			given_answer = given_answer + Number(el[i].value);
 		}
 		
