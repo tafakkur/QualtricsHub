@@ -24,10 +24,10 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 	show_attempt = 1;
 	this.hideNextButton();
 
-	el = this.getChoiceContainer().querySelector("input");
-	el.insertAdjacentHTML(
-		"afterend",
-		"<button id='answer_check'>Check your Answer</button>"
+	el = this.getChoiceContainer().querySelectorAll("input");
+	this.getChoiceContainer().insertAdjacentHTML(
+		"beforeend",
+		"<div><br><br><button id='answer_check'>Check your Answer</button></div>"
 	);
 
 	btn = this.getChoiceContainer().querySelector("#answer_check");
@@ -40,17 +40,80 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 
 	that = this;
 	function check_answer() {
-		given_answer = Number(el.value);
+		given_answer = 0;
+		for(i=0;i<el.length;i++){
+			//You can change this to calculate the given answer, as you with to calculate it.
+			given_answer = given_answer + Number(el[i].value);
+		}
+		
 
 		if (given_answer == desired_answer) {
 			that.clickNextButton();
 			btn.disable();
-			el.disable();
+			el.forEach(item => item.disable());
 		} else wrong_times += 1;
 		if (wrong_times == max_attempts) {
 			that.clickNextButton();
 			btn.disable();
-			el.disable();
+			el.forEach(item => item.disable());
+		}
+
+		if (show_attempt) update_attempt();
+	}
+
+	function update_attempt() {
+		atmpt.innerHTML =
+			"Attempts used:  " + wrong_times + " out of " + max_attempts;
+
+		if (given_answer == desired_answer) {
+			atmpt.innerHTML =
+				"<b style='color:blue'>Correct Answer. Moving to Next Question</b>";
+		}
+
+		if (wrong_times == max_attempts) {
+			atmpt.innerHTML =
+				"<b style='color:red'>You have used all your attempts. Moving to Next Question.</b>";
+		}
+	}
+});Qualtrics.SurveyEngine.addOnReady(function () {
+	desired_answer = 25;
+	max_attempts = 3;
+	wrong_times = 0;
+	show_attempt = 1;
+	this.hideNextButton();
+
+	el = this.getChoiceContainer().querySelectorAll("input");
+	this.getChoiceContainer().insertAdjacentHTML(
+		"beforeend",
+		"<div><br><br><button id='answer_check'>Check your Answer</button></div>"
+	);
+
+	btn = this.getChoiceContainer().querySelector("#answer_check");
+	btn.onclick = check_answer;
+
+	if (show_attempt) {
+		this.getQuestionContainer().insertAdjacentHTML("beforeend", '<span id="atmpt" style="font-size: smaller;"></span>');
+		atmpt = this.getQuestionContainer().querySelector("#atmpt");
+	}
+
+	that = this;
+	function check_answer() {
+		given_answer = 0;
+		for(i=0;i<el.length;i++){
+			//You can change this to calculate the given answer, as you with to calculate it.
+			given_answer = given_answer + Number(el[i].value);
+		}
+		
+
+		if (given_answer == desired_answer) {
+			that.clickNextButton();
+			btn.disable();
+			el.forEach(item => item.disable());
+		} else wrong_times += 1;
+		if (wrong_times == max_attempts) {
+			that.clickNextButton();
+			btn.disable();
+			el.forEach(item => item.disable());
 		}
 
 		if (show_attempt) update_attempt();
