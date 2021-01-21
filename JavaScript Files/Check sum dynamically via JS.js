@@ -8,7 +8,7 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 	//Get the Question Id
 	qc = this.getQuestionContainer();
 	// Get the number of choices
-	input_boxes = qc.querySelectorAll("Input");
+	input_boxes = qc.querySelectorAll("Input:not([name*='Total']");
 
 	base_msg = qc.querySelector(".QuestionText").innerHTML;
 
