@@ -10,6 +10,10 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 		.querySelectorAll("div[id^=QID]:not(.Separator)")
 		.forEach((item) => all_questions.push(item));
 
+	var display_cals = all_questions[all_questions.length - 1];
+	display_cals.readOnly = true;
+	display_cals.style.cursor = "not-allowed";
+
 	function cal_sum() {
 		var sum = 0;
 		all_questions.forEach((question, which_q) => {
@@ -19,7 +23,7 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 				}
 			});
 		});
-		document.querySelector("#total_cal").innerText = sum;
+		display_cals.querySelector(".InputText").value = sum;
 	}
 	var config = { attributes: true, subtree: true };
 
