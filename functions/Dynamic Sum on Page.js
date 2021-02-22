@@ -6,13 +6,16 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 	};
 
 	var all_questions = [];
-	document
-		.querySelectorAll("div[id^=QID]:not(.Separator)")
-		.forEach((item) => all_questions.push(item));
+	document.querySelectorAll("div[id^=QID]:not(.Separator)").forEach((question) => {
+		if (question.className.includes("TE")) {
+			display_cal = question.querySelector("input");
+		} else {
+			all_questions.push(question);
+		}
+	});
 
-	var display_cals = all_questions[all_questions.length - 1];
-	display_cals.readOnly = true;
-	display_cals.style.cursor = "not-allowed";
+	display_cal.readOnly = true;
+	display_cal.style.cursor = "not-allowed";
 
 	function cal_sum() {
 		var sum = 0;
@@ -23,7 +26,7 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 				}
 			});
 		});
-		display_cals.querySelector(".InputText").value = sum;
+		display_cal.value = sum;
 	}
 	var config = { attributes: true, subtree: true };
 
