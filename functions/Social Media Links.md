@@ -24,46 +24,48 @@ Create a Descriptive Text Question with just some guiding text like:
 
 _Question Javascript:_
 
-```text
+```js
 Qualtrics.SurveyEngine.addOnReady(function () { 
-    qid = "#" + this.questionId;
-    survey_link = encodeURI("${e://Field/Q_URL}");
+    let qid = "#" + this.questionId;
+    let survey_link = encodeURI("${e://Field/Q_URL}");
 
-    wa_link = "https://api.whatsapp.com/send?text=survey_link";
-    rd_link = "https://www.reddit.com/submit?title=Awesome&newwindow=1&selftext=true&text=My awesome survey %0A Survey Link: survey_link";
+    let wa_link = "https://api.whatsapp.com/send?text=survey_link";
+    let rd_link = "https://www.reddit.com/submit?title=Awesome&newwindow=1&selftext=true&text=My awesome survey %0A Survey Link: survey_link";
 
     wa_link = wa_link.replace("survey_link",survey_link);
     rd_link = rd_link.replace("survey_link",survey_link);
 
-    rd_image = "https://raw.githubusercontent.com/tafakkur/use-files/main/reddit.png";
-    wa_image = "https://raw.githubusercontent.com/tafakkur/use-files/main/whatsapp.png";
+    let rd_image = "https://raw.githubusercontent.com/tafakkur/use-files/main/reddit.png";
+    let wa_image = "https://raw.githubusercontent.com/tafakkur/use-files/main/whatsapp.png";
 
-    wa = "<a href=\'" + wa_link + "\' target='_blank'><img src=\'" + wa_image + "\' ><br><br></a>";
-    rd = "<a href=\'" + rd_link + "\' target='_blank'><img src=\'" + rd_image + "\' ><br><br></a>";
+    let wa = "<a href=\'" + wa_link + "\' target='_blank'><img src=\'" + wa_image + "\' ><br><br></a>";
+    let rd = "<a href=\'" + rd_link + "\' target='_blank'><img src=\'" + rd_image + "\' ><br><br></a>";
 
 
     document.querySelector(qid).insertAdjacentHTML('beforeend',wa);
     document.querySelector(qid).insertAdjacentHTML('beforeend',rd);
 });
 ```
+<br>
+<br>
 
 **For End of Survey:**
 
-```text
+```html
 <script>
-    survey_link = encodeURI("${e://Field/Q_URL}");
+    let survey_link = encodeURI("${e://Field/Q_URL}");
 
-    wa_link = "https://api.whatsapp.com/send?text=survey_link";
-    rd_link = "https://www.reddit.com/submit?title=Awesome&newwindow=1&selftext=true&text=My awesome survey %0A Survey Link: survey_link";
+    let wa_link = "https://api.whatsapp.com/send?text=survey_link";
+    let rd_link = "https://www.reddit.com/submit?title=Awesome&newwindow=1&selftext=true&text=My awesome survey %0A Survey Link: survey_link";
 
     wa_link = wa_link.replace("survey_link",survey_link);
     rd_link = rd_link.replace("survey_link",survey_link);
 
-    rd_image = "https://raw.githubusercontent.com/tafakkur/use-files/main/reddit.png";
-    wa_image = "https://raw.githubusercontent.com/tafakkur/use-files/main/whatsapp.png";
+    let rd_image = "https://raw.githubusercontent.com/tafakkur/use-files/main/reddit.png";
+    let wa_image = "https://raw.githubusercontent.com/tafakkur/use-files/main/whatsapp.png";
 
-    wa = "<a href=\'" + wa_link + "\' target='_blank'><img src=\'" + wa_image + "\' ><br><br></a>";
-    rd = "<a href=\'" + rd_link + "\' target='_blank'><img src=\'" + rd_image + "\' ><br><br></a>";
+    let wa = "<a href=\'" + wa_link + "\' target='_blank'><img src=\'" + wa_image + "\' ><br><br></a>";
+    let rd = "<a href=\'" + rd_link + "\' target='_blank'><img src=\'" + rd_image + "\' ><br><br></a>";
 
 
     document.querySelector("#EndOfSurvey").insertAdjacentHTML('beforeend',wa);

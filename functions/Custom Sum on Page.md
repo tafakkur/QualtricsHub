@@ -1,3 +1,10 @@
+# Custom sum on Page
+
+This function demonstrates calculating a weighted or any customized sum on the page. The weights are assigned at the top for each of the three questions and based on the selection of the respondents the final value is calculated.
+
+This was developed for someone who wanted to calculate the total calories based on the toppings selected in the desert.
+
+```js
 Qualtrics.SurveyEngine.addOnReady(function () {
 	var q_weights = {
 		1: [100, 150, 125, 0],
@@ -38,3 +45,4 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 		option_watcher.disconnect();
 	};
 });
+```
