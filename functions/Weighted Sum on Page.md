@@ -1,4 +1,4 @@
-# Custom sum on Page
+# Weighted sum on Page
 
 This function demonstrates calculating a weighted or any customized sum on the page. The weights are assigned at the top for each of the three questions and based on the selection of the respondents the final value is calculated.
 

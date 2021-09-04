@@ -14,16 +14,12 @@ _Javascript Code_:
 If you use it in the header, then you need place it within the `script` tags as shown below.  
 If you use in a question, you need to remove them.
 
-```text
+```html
 <script>
-
-Qualtrics.SurveyEngine.addOnReady(function()
-{
-        var plug = document.getElementById("Plug"); //Find "Powered By" on the page
-        plug.style.cssText += ';display:none !important;'; //Set the defined element's display style to "none"
-
-});
-
+	Qualtrics.SurveyEngine.addOnReady(function () {
+		let plug = document.getElementById("Plug"); //Find "Powered By" on the page
+		plug.style.cssText += ";display:none !important;";
+		//Set the defined element's display style to "none"
+	});
 </script>
 ```
-

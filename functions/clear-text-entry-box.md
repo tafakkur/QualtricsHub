@@ -1,2 +1,0 @@
-# Clear-Text-Entry-Box
-
