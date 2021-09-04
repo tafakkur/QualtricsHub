@@ -3,8 +3,6 @@
 * [Qualtrics Related Stuff from Across the Web](README.md)
 * [File Download Links](links-to-files.md)
 * [Functions](functions/README.md)
-  * [Sticky Video](functions/make-video-sticky-on-page.md)
-  * [Add Social Media Link in the Survey](functions/add-social-media-link.md)
   * [Add Header Row to Matrix](functions/matrix-add-header-row.md)
   * [Set-Embedded-on-Page](functions/set-embedded-on-page.md)
   * [Clear-Text-Entry-Box](functions/clear-text-entry-box.md)
