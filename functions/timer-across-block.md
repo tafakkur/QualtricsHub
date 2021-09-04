@@ -4,7 +4,7 @@ Qualtrics.SurveyEngine.addOnload\(function \(\) { var time\_calc; }\);
 
 Qualtrics.SurveyEngine.addOnReady\(function \(\) {
 
-```text
+```javascript
 //Get the remaning time
 var rem_time = "${e://Field/remaining_time}";
 rem_time = parseInt(rem_time);

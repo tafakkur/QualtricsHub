@@ -1,4 +1,4 @@
-# Set-Embedded-on-Page
+# Set Embedded Dat on Page
 
 This script is a demo of adding/modifying Embedded Data variables based on events on the page.
 
@@ -8,7 +8,7 @@ This allows more flexibility than the _Set Embedded Data_ option in the _Survey 
 
 By modifying it a bit and adding it to the `addOnReady()` or `addOnLoad()` section, you can even record choices that were selected and then unselected.
 
-```text
+```javascript
 Qualtrics.SurveyEngine.addOnPageSubmit(function (type) { // To record the selection when the page is submitted
     if (type == "next") {Re
         var selChoice = this.getSelectedChoices(); // Get the selected choices

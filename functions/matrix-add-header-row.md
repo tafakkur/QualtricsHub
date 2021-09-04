@@ -11,15 +11,15 @@ _Screenshot_:
 
 _Question Javascript:_
 
-```text
+```javascript
 Qualtrics.SurveyEngine.addOnReady(function()
 {
-    choice_table = this.getChoiceContainer();
+    let choice_table = this.getChoiceContainer();
 
     //Numbering starts from 0. So the header is the 0th row, the first statement row 1 etc. 
     //This will create an empty row above statement 4. YOu can change it accordingly. 
 
-    new_row = choice_table.insertRow(2);
+    let new_row = choice_table.insertRow(2);
 
     //rows[0] refers to the header. 
     // So this takes the header row fills up the empty row just created. 
