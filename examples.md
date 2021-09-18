@@ -15,5 +15,5 @@
    6. If they choose option 2, the question text changes, giving them an option to re-consider.
    7. If they choose option 3, they are automatically redirected to the next page.
 
-![](.gitbook/assets/external-website-error.gif)
+![](../../images/external-website-error.gif)
 
